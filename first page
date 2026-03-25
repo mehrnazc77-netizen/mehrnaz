@@ -1,0 +1,654 @@
+<!Doctype html>
+<html>
+<head>
+<!--
+   Assignment#2
+   creating a  Webpage
+    
+
+    Author: Mehrnaz Chitsaz
+    Date: Mar02, 2026  
+
+    Filename: first_page.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="keywords" content=" Mehrnaz, Chitsaz, About Mehrnaz" />
+   <title>Mehrnaz Chitsaz Website</title>
+   <link href="first-page-style.css" rel="stylesheet" />
+</head>
+ <body>
+<header>
+   
+   <nav>
+      <h1>Personal Bio Page</h1>
+      <ul>
+         <li><a href="first_page.html">Home</a></li>
+         <li><a href="About_Me.html">About Me</a></li>
+         <li><a href="Education.html">Education</a></li>
+         <li><a href="Careers.html">Careers</a></li>
+         <li><a href="birthday.html">Birthday</a></li>
+         <li><a href="form.html">Contact</a></li>
+         <li><a href="another_page.html" title="This leads you to another page"> Go to the other page</a></li>
+        
+      </ul>
+   </nav>
+  </header>
+
+   <section class="intro">
+
+   <div class="intro-text">
+      <h2>Hi! I am Mehrnaz</h2>
+
+      <p><strong>About me:</strong> I am a proud mother of two beautiful daughters who bring joy, hope, and continuous learning into my life. I truly give thanks for the time I spend with them, as they motivate me to grow and improve every day. In addition to my role as a mother, I am a bachelor's student in Computing Science to continue expanding my knowledge and achieving academic and professional goals in this field.</p>
+
+      <p><strong>About my career:</strong> I currently work as an Airbnb manager while also embracing my roles as a full-time mother and wife. At the same time, 
+        I am a part-time student pursuing a Bachelor’s degree in Computing Science. Earlier in my career, I worked in quality control and quality assurance in 
+        pharmaceutical companies. After, I worked as an pharmacy assistant at Loblaws Pharmacy. My academic background is in Biological Sciences, and
+         I completed my degree at Simon Fraser University. These experiences have shaped my professional journey and continue to inspire my passion for learning, growth,
+          and exploring new fields</p>
+   </div>
+
+   <div class="intro-image">
+      <img src="Mehrnaz.png" alt="Photo of Mehrnaz">
+   </div>
+</section>
+
+
+<section class="hobbies">
+    
+    <div class="hobbies-pic">
+    <img src="hobbies.jpg" alt="Picture of Hobbies" >
+    </div>
+
+    <div class="hobbies-content">
+   <h3> My Favourite Hobbies:</h3>
+   <ul class="hobbies-list">
+      <li>Roller skating</li>
+      <li>Hiking</li>
+      <li>Bicycling</li>
+      <li>Swimming</li>
+      <li>Cooking</li>
+      <li>Traveling</li>
+      <li>singing</li>
+      <li>Listening to music</li>
+      <li>Drawing and Painting</li>
+   </ul>
+   </div>
+   
+ 
+</section> 
+ 
+<footer>
+<div class="footer-items">
+    <p><strong>Click the image to go to another page.</strong></p>
+    <a href="another_page.html" title="This leads you to another page">
+              <img src="arrow.png" alt="Go to another page arrow" ></a>
+
+</div>
+</footer>
+ </body>
+</html>
+@charset "utf-8";
+@font-face {
+    font-family: Quicksand;
+    src: url('Quicksand-Regular.woff') format('woff'),
+         url('Quicksand-Regular.ttf') format('truetype');
+}
+
+
+
+  
+/* Remove default spacing */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(237, 184, 212);
+}
+
+p {
+  margin-bottom: 60px;
+  margin-left: 10px;
+}
+
+/* Navbar styling */
+nav {
+  width: auto;
+  display: flex;               /* Makes h1 + ul side by side */
+  align-items: center;         /* Vertically center */
+  justify-content: space-between; /* Space between title & links */
+  background-color: #f2eeee;
+  padding: 10px 20px;
+  background: linear-gradient(345deg, #bc98b7, rgb(170, 105, 170)70%);
+}
+
+/* Remove bullet points */
+nav ul {
+  list-style: none;
+  display: flex;   /* Makes links horizontal */
+  margin: 0;
+  padding: 0;
+ 
+}
+
+                       
+nav ul li {
+  margin-left: 55px;    /* Space between links */
+}
+
+nav h1
+{
+  color: black;
+  font-size: 24px;
+}
+/* Link styling */
+nav a {
+  text-decoration: none;
+  color: rgb(4, 4, 4);
+  font-size: 18px;
+  
+}
+
+a:hover {
+  color: rgb(8, 65, 141);
+  text-decoration: underline;
+}
+ a:visited {
+  color: rgb(158, 21, 146);
+}
+
+/* Style for the heading */
+.intro {
+  display: flex;          /* puts text and image side by side */
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 10px;       /* 10px space under nav bar */
+  font-size: 18px;
+  line-height: 1.5; 
+  padding-left: 20px; /* optional spacing from left side */
+
+}
+
+.intro-text {
+  width: 60%;<!doctype html>
+<html>
+<head>
+<!--
+   Assignment#2
+   creating a  Webpage
+    
+
+    Author: Mehrnaz Chitsaz
+    Date: Mar02, 2026  
+
+    Filename: another_page.html
+   -->
+   <meta charset="utf-8" />
+   
+   <title>Mehrnaz Bio</title>
+   <link href="first-page-style.css" rel="stylesheet" />
+</head>
+ <body>
+<header>
+   
+   <nav>
+      <h1>Personal Bio Page</h1>
+      <ul>
+          <li><a href="first_page.html">Home</a></li>
+         <li><a href="About_Me.html">About Me</a></li>
+         <li><a href="Education.html">Education</a></li>
+         <li><a href="Careers.html">Careers</a></li>
+         <li><a href="birthday.html">Birthday</a></li>
+         <li><a href="form.html">Contact</a></li>
+      </ul>
+   </nav>
+   
+   <section class="Adventure">
+
+   <div class="hike-image">
+        <img src="hike.jpg" alt="hiking" >
+      
+        <h2>My Favorite Adventure: Hiking</h2>
+
+      <p><strong>Hiking</strong> is one of my favorite hobbies that allows me to connect with nature and explore new places.
+        I have had many exciting adventures while hiking, from conquering challenging trails to witnessing breathtaking views.
+         One memorable experience was when I hiked to the Grouse mountain and was rewarded with a panoramic view of the surrounding landscape. 
+         The sense of accomplishment and the beauty of nature made it an unforgettable adventure. Hiking not only provides physical exercise but also offers a sense of 
+         tranquility and a chance to disconnect from the hustle and bustle of everyday life.
+          I look forward to many more thrilling hiking adventures in the future!</p>
+    </div>
+
+      
+
+    <div class="skate-image">
+      <img src="skate.jpg" alt="skate"> 
+      <h3>My Favorite Sport: Skating</h3>
+      <p><strong>Roller skating</strong> is another activity I enjoy. It's a great way to stay active and have fun at the same time. Since I was a child, I have loved roller skating. 
+        I started with roller skates and later explored ice skating as well. I love the feeling of gliding smoothly on the ice and the sense of freedom it gives me. Roller skating is not only a fantastic 
+        workout but also a joyful way to express myself and enjoy the outdoors. Whether I'm skating in a park or on an ice rink, it always brings 
+        a smile to my face and allows me to embrace the thrill of movement.
+        </p>
+   </div>
+
+  
+</section>
+
+  
+ </header>
+
+    
+
+
+</body>
+</html>
+
+
+}
+
+.intro-image {
+  width: 580px;
+  margin-right: 10px; /* space from right edge of the page */
+  margin-left: 25px; /* space from text */
+  margin-bottom: 25px; /* space from bottom of the page */
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hobbies { 
+  display: flex;
+  align-items: center;
+  gap: 300px; /* space between text and image */
+  flex-wrap: wrap; /* allows items to wrap to the next line on smaller screens */
+}
+
+.hobbies-pic {
+  width: 650px;
+  align-items: center;
+  margin-bottom: 10px; /* space from bottom of the page */
+  margin-left: 30px; /* space from left edge of the page */
+}
+
+.hobbies-pic img {
+  width: 100%;
+  height: auto;
+  
+}
+
+
+.page {
+    background-color: rgba(240, 191, 201, 0.462);  
+}
+
+
+.hobbies-content {
+  font-size: 18px;
+  line-height: 1.5;       /* increases space between lines */
+  color: black;
+  
+}
+
+
+.title {
+  font-weight: bold;     /* makes the first line bold */
+  list-style-type: none; /* removes the bullet */
+  font-size: 18px;
+  line-height: 2.5;
+  color : rgba(18, 10, 226, 0.462);
+}
+
+ footer {
+  background-color: #af5cab;   /* light gray background */
+  padding: 5px 20px;
+  margin-top: auto;  
+  clear : both; /* ensures footer is below floated content */
+}
+
+.footer-items {
+  display: flex;              /* align image and text in a row */
+  justify-content: flex-end;  /* move content to the right side */
+  align-items: center;        /* vertically center the image and text */
+  gap: 10px;                  /* space between text and image */
+}
+
+.footer-items img {
+  height: 60px;
+  border: none;                 /* remove border if browser adds one */
+  cursor: pointer;              /* shows pointer on hover */
+  transition: transform 0.3s; 
+  width: auto;
+ 
+}
+
+.footer-items img:hover {
+  transform: scale(1.1);        /* slightly enlarge image on hover */
+}/* Form container styling */
+form {
+    width: 700px;
+    padding: 40px;
+    border: 1px solid #e38143;
+    border-radius: 8px;
+    background-color: #eddad1;
+    font-family: Arial, sans-serif;
+}
+
+/* Labels */
+label {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Highlight field when user focuses on it */
+input:focus {
+    border-color: #c82fcd;
+    background-color: #eef7ff;
+    outline: none;
+}
+
+/* Inline validation for invalid input */
+input:invalid {
+    border-color: red;
+    background-color: #ed77a7;
+}
+
+/* Inline validation for valid input */
+input:valid {
+    border-color: green;
+    background-color: greenyellow;
+}
+
+/* Required field indicator */
+input:required {
+    background-color: rgb(235, 186, 107);
+}
+
+/* Submit button styling */
+button {
+    margin-top: 25px;
+    padding: 20px;
+    width: 100%;
+    background-color: #b0caf4;
+    border-color: #04214b;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  
+}
+
+button[type="reset"] {
+    margin-top: 25px;
+    padding: 20px;
+    width: 100%;
+    background-color: #b0caf4;
+    border-color: #04214b;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Error message styling */
+input:invalid:focus {
+    box-shadow: 0 0 5px red;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  
+}
+#list {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    display: inline-block;
+}
+
+/* Highlight input fields on hover */
+input:hover,
+textarea:hover {
+    border-color: #c82fcd;
+    background-color: #fbefff;
+}
+
+/* Highlight select or list dropdowns */
+#list:hover {
+    border-color: #c82fcd;
+    background-color: #fbefff;
+}
+label:hover {
+    color: #c82fcd;
+    cursor: pointer;
+}
+input[type="checkbox"]:hover {
+    outline: 2px solid #c82fcd;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3; /* you already have this */
+    transform: scale(1.05);     /* subtle zoom effect */
+    transition: 0.2s;
+}
+
+form:hover {
+    box-shadow: 0 0 15px #c82fcd;
+    transition: 0.3s;
+}
+
+.hike-image img {
+  width: 300px;        /* small image */
+  float: left;      /* text wraps around the picture */
+  margin: 10px 20px 10px 0;
+  margin-left: 10px;  /* space between image and text */
+}
+
+.skate-image img {
+  width: 500px;        /* small image */
+  float: right;      /* text wraps around the picture */
+  margin-right: 10px;   /* space between image and text */
+}
+
+.hike-image {
+font-size: 18px;
+line-height: 2.5;
+color: black;
+margin-left: 10px;
+margin: 10px 20px 10px 0;
+ margin-right: 10px;
+ margin-left: 20px;
+}
+
+
+.skate-image {
+  font-size: 18px;
+  line-height: 2.5;
+  color: black;
+  margin: 10px 20px 10px 0;
+ margin-right: 10px;
+ margin-left: 20px;
+}
+
+.skate-image h3 {
+    margin-left: 10px; /* remove default top margin */
+   
+}
+
+
+.birthday img {
+  width: auto;        /* small image */       
+  float: right;      /* text wraps around the picture */
+  margin-right: 10px;   
+  margin-top: 5px ;
+}
+.birthday h2 {
+   margin-left: 10px;
+}
+.birthday p {
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height:2.5 ;}
+
+.audio {
+  display:  block;
+  margin-left: 300px; /* centers the audio player */
+}
+
+.video {
+    width: 700px;
+   margin-left: 20px;
+    border: 3px solid black;
+}
+
+
+
+    <!doctype html>
+<html>
+
+<!--
+   Assignment#3
+   creating a  form for the website
+    
+
+    Author: Mehrnaz Chitsaz
+    Date: Mar02, 2026  
+
+    Filename: form.html
+   -->
+  
+ <link href="oform.css" rel="stylesheet" />
+
+ <body>
+
+   <form action="/action_page.php" >
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fName" required ><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lName" value="" required><br>
+  <label for="Street Address">Street Address:</label>
+  <input type="text" id="Street Address" name="street" value="" required><br>
+  <label for="City">City:</label>
+  <input type="text" id="City" name="city" value="" required><br>
+    <label for="Province">Province:</label>
+  <input type="text" id="Province" name="province" value="" required><br>
+    <label for="Postal Code">Postal Code:</label>
+  <input type="text" id="Postal Code" name="poscode" value="" pattern="^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$" required><br>
+    <label for="phone number">Phone Number:</label>
+  <input type="text" id="phone number" name="phone" value="" pattern="^\d{3}\d{3}\d{4}$" required><br>
+
+ <label for="list">Select One:</label>
+  <select id="list" name="list" required>
+    <option value="student">Student</option>
+    <option value="parent">Parent</option>
+    <option value="dancer">Dancer</option>
+    <option value="performer">Performer</option>
+    <option value="etc.">etc.</option>
+  </select><br><br>
+  
+<input type="checkbox" id="contact" name="Contact me Please" required>
+  <label for="contact me"> Please contact me </label><br><br>
+ 
+
+<label for="comment">Additional info or Comments :</label><br>
+<textarea name="comment" rows="15" cols="40">
+
+</textarea><br>
+
+<input type="submit" value="Submit Details">
+<input type="reset" value="Cancel Details">
+</form>
+</body>
+</html>
+
+
+
+   
+  
+
+<!Doctype html>
+<html>
+<head>
+<!--
+   Assignment#4
+   creating a  birthday page
+    
+
+    Author: Mehrnaz Chitsaz
+    Date: Mar24, 2026  
+
+    Filename: birthday.html
+   -->
+   <meta charset="utf-8" />
+    <title>Mehrnaz Birthday</title>
+    <link href="first-page-style.css" rel="stylesheet" />
+</head>
+ <body>
+<header>
+   
+   <nav>
+      <h1>Personal Bio Page</h1>
+      <ul>
+         <li><a href="first_page.html">Home</a></li>
+         <li><a href="About_Me.html">About Me</a></li>
+         <li><a href="Education.html">Education</a></li>
+         <li><a href="Careers.html">Careers</a></li>
+         <li><a href="birthday.html">Birthday</a></li>
+         <li><a href="form.html">Contact</a></li>
+         <li><a href="another_page.html" title="This leads you to another page"> Go to the other page</a></li>
+        
+      </ul>
+   </nav>
+
+<audio class="audio" controls >
+<source src="audio.mp3" type="audio/mpeg" />
+</audio>
+
+  </header>
+  
+    
+  
+  <div class="birthday">
+  
+  <img src="birthday.jpg" alt="Birthday Image">
+
+    <h2>My Birthday Celebration</h2>
+
+      <p><strong>My birthday</strong> is a special day for me that I am excited about every year. I was born 
+        in the middle of May . I am a spring girl who loves the blooming flowers and sunny wheather. 
+        the following video is my favourite song.</p>
+
+</div>
+
+<video  class= "video" controls>
+    <source src="birthday.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
